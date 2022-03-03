@@ -5,11 +5,13 @@ A version with the maps and commentary is available at RPubs: [Mearsheimer_NATO]
 
 <hr />
 
+<img width="720" alt="nato_1991" src="https://user-images.githubusercontent.com/12042357/156549269-bd1320a0-c433-4540-9692-3a5e6666b88c.png">
 
-![git](https://user-images.githubusercontent.com/12042357/156515190-51cff937-5a87-4f60-aaa4-0c390db644fb.png)
+
 <center><p> . . .</p> </center>
 
-![Rplot02](https://user-images.githubusercontent.com/12042357/156517658-3200742e-fe38-4692-a36d-82f3d99fef0d.png)
+
+<img width="720" alt="ukraine_flipped" src="https://user-images.githubusercontent.com/12042357/156549302-38f4a6d7-63dd-44e2-918f-1a6fcb995c32.png">
 
 
 <hr />
