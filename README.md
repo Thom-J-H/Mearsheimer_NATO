@@ -11,8 +11,7 @@ A version with the maps and commentary is available at RPubs: [Mearsheimer_NATO]
 <center><p> . . .</p> </center>
 
 
-<img width="720" alt="ukraine_flipped" src="https://user-images.githubusercontent.com/12042357/156549302-38f4a6d7-63dd-44e2-918f-1a6fcb995c32.png">
-
+<img width="720" alt="nato_expands" src="https://user-images.githubusercontent.com/12042357/156549389-ebc21ec8-7f4d-48d3-bd0a-250eb1e2c15d.png">
 
 <hr />
 
