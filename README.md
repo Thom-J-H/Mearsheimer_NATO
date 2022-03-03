@@ -28,7 +28,7 @@ The following applies to the R script, related data, and maps (also [available h
      href="https://github.com/Thom-J-H/Mearsheimer_NATO">
     <span property="dct:title">Data Humanist</span></a>
   has waived all copyright and related or neighboring rights to
-  <span property="dct:title">Mearsheimer & NATO: script and data</span>.
+  <span property="dct:title">Mearsheimer & NATO: script, data, and maps (images).</span>.
 This work is published from:
 <span property="vcard:Country" datatype="dct:ISO3166"
       content="US" about="https://github.com/Thom-J-H/Mearsheimer_NATO">
