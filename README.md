@@ -7,6 +7,13 @@ A version with the maps and commentary is available at RPubs: [Mearsheimer_NATO]
 
 
 ![git](https://user-images.githubusercontent.com/12042357/156515190-51cff937-5a87-4f60-aaa4-0c390db644fb.png)
+<center><p> . . .</p> </center>
+
+![Rplot02](https://user-images.githubusercontent.com/12042357/156517658-3200742e-fe38-4692-a36d-82f3d99fef0d.png)
+
+<center><p> . . .</p> </center>
+
+![flip](https://user-images.githubusercontent.com/12042357/156517680-29787298-9f14-4582-bc51-1add4d9f6aca.png)
 
 <hr />
 
