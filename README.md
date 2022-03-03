@@ -14,7 +14,7 @@ A version with the maps and commentary is available at RPubs: [Mearsheimer_NATO]
 
 <hr />
 
-The following applies to the R script and related data.  NOT to the text content which is copyright &copy; 2022 for the substack: [American Exile](https://americanexile.substack.com/).
+The following applies to the R script, related data, and maps (also [available here](https://github.com/Thom-J-H/Mearsheimer_NATO/tree/main/map_images)).  NOT to the text content which is copyright &copy; 2022 for the substack: [American Exile](https://americanexile.substack.com/).
 
 
 <p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
