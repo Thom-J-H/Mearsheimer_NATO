@@ -5,3 +5,7 @@ John J. Mearsheimer (2014) argued that "taproot of the trouble is NATO enlargeme
 
 
 ![git](https://user-images.githubusercontent.com/12042357/156515190-51cff937-5a87-4f60-aaa4-0c390db644fb.png)
+
+<hr />
+
+The R script used to produce this images
