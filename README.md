@@ -25,7 +25,12 @@ Commentary on these graphs and data at the substack [American Exile](https://ame
 <p>These graphs also released under CC0 (Public Domain).</p>
  
 
+ ![china_balance](https://user-images.githubusercontent.com/12042357/166107045-90e9f88b-bba1-4239-a73a-3b5c3c523bc6.png)
+
  
+<center><p> . . .</p> </center> 
+
+![russia_IM](https://user-images.githubusercontent.com/12042357/166107049-24a8abc6-9c2d-480a-a96e-e7960b795f85.png)
 
 <hr />
 The following applies to the R script, related data, graphs, and maps (also [available here](https://github.com/Thom-J-H/Mearsheimer_NATO/tree/main/map_images)).  NOT to the text content which is copyright &copy; 2022 for the substack: [American Exile](https://americanexile.substack.com/).
