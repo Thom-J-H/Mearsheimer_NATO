@@ -1,0 +1,175 @@
+---
+title: "USA Trade Balances with China & Russia"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: yes 
+    toc_float: yes
+  toc: default
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	echo = FALSE,
+	fig.align = "center",
+	fig.fullwidth = TRUE,
+	message = FALSE,
+	warning = FALSE
+)
+```
+
+
+```{r libs_one}
+library(tidyverse)
+library(here)
+library(visdat)
+```
+
+
+```{r}
+load(here::here("data", "tidy_data", "russia_china.rda"))
+```
+
+## Project Note
+
+These graphs and charts explore the USA trade balances with China and Russia.  The data source is  Census.gov › Business & Industry › Foreign Trade › [U.S. International Trade Data](https://www.census.gov/foreign-trade/data/index.html).
+
+The source markdown file and data set @ [Github Repo: Mearsheimer_NATO](https://github.com/Thom-J-H/Mearsheimer_NATO).
+
+Commentary on these graphs and data at the substack [American Exile](https://americanexile.substack.com/p/russia-a-convenient-enemy-china-not).
+
+<hr />
+
+## Trade Balances
+
+The two following graphs plot the export and import data for the years available. All figures are in USD ($) millions, as per the original source.
+
+
+### USA-China: 1985-2021
+
+```{r}
+
+breaks_x <- seq(1982, 2030, by = 2)
+
+breaks_y <- seq(-600000, 300000, by = 50000 )
+
+
+
+russia_china_import_export %>%
+  filter(CTYNAME == "China", year < 2022) %>%
+  ggplot() +
+  geom_col(aes(y =  Exports, x = year),fill = "black") +
+  geom_col(aes(y =  Imports, x = year), fill = "red") +
+  scale_x_continuous(breaks = breaks_x) + 
+  scale_y_continuous(breaks = breaks_y, labels=scales::dollar_format() ) +
+  labs(title = "USA-China Trade Balance: 1985-2021",
+       x = "Year", subtitle= "Exports (Black) & Imports (Red): USD Millions",
+       y = "$ Millions",
+       caption = "Data Humanist, CC0 (Public Domain).\n Source data: US Gov.") +
+  theme_minimal()
+```
+
+
+### USA-Russia: 1992-2021
+
+```{r}
+
+
+breaks_x2 <- seq(1980, 2030, by = 2)
+
+breaks_y2 <- seq(-50000, 15000, by = 2500 )
+
+russia_china_import_export %>%
+  filter(CTYNAME == "Russia", year < 2022) %>%
+  ggplot() +
+  geom_col(aes(y =  Exports, x = year),fill = "black") +
+  geom_col(aes(y =  Imports, x = year), fill = "red") +
+  scale_x_continuous(breaks = breaks_x2) + 
+  scale_y_continuous(breaks = breaks_y2, labels=scales::dollar_format() ) +
+  labs(title = "USA-Russia Trade Balance: 1992-2021",
+       x = "Year", subtitle= "Exports (Black) & Imports (Red): USD Millions",
+       y = "$ Millions",
+       caption = "Data Humanist, CC0 (Public Domain).\n Source data: US Gov.") +
+  theme_minimal()
+
+```
+
+<hr />
+
+## Trade Imbalances
+
+The two following graphs plot the exports minus imports to determine in which direction the cash flow goes. In both cases, the USA runs trade balance deficits against China and againt Russia. All figures are in USD ($) millions, as per the original source.
+
+
+### USA-China: 1985-2021
+
+```{r}
+
+breaks_year2 <- seq(1980, 2030, by = 2)
+breaks_y4 <- seq(0, -400000, by = -25000)
+
+russia_china_import_export %>%
+  filter(CTYNAME == "China", year < 2022) %>%
+  ggplot( aes(x = year, y = Trade_Balance,
+              fill = abs(Trade_Balance) ) ) +
+  geom_col() +
+  scale_y_continuous(breaks = breaks_y4, labels = scales::dollar_format()) +
+  scale_x_continuous(breaks = breaks_year2 ) +
+  scale_fill_gradient(low = "#C0C0C0", high = "#FF0000") +
+  guides(fill = "none") +
+  theme_minimal() +
+  labs(title = "USA Trade Imbalance with China: 1985-2021",
+       x = "Year", y = "$ Millions",
+       caption = "Data Humanist, CC0 (Public Domain).\n Source data: US Gov.") +
+  geom_smooth(method = 'loess', se = FALSE, color = "#123123") 
+
+```
+
+
+
+
+### USA-Russia: 1992-2021
+
+
+```{r}
+
+breaks_year3 <- seq(1980, 2030, by = 2)
+breaks_y3 <- seq(15000, -50000, by = -2500)
+
+russia_china_import_export %>%
+  filter(CTYNAME == "Russia", year < 2022) %>%
+  ggplot( aes(x = year, y = Trade_Balance,
+              fill = abs(Trade_Balance) ) ) +
+  geom_col() +
+  scale_y_continuous(breaks = breaks_y3, labels = scales::dollar_format()) +
+  scale_x_continuous(breaks = breaks_year2 ) +
+  scale_fill_gradient(low = "#C0C0C0", high = "#FF0000") +
+  guides(fill = "none") +
+  theme_minimal() +
+  labs(title = "USA Trade Imbalance with Russia: 1992-2021",
+       x = "Year", y = "$ Millions",
+       caption = "Data Humanist, CC0 (Public Domain).\n Source data: US Gov.") +
+  geom_smooth(method = 'loess', se = FALSE, color = "#123123") 
+  
+```
+
+<hr />
+
+## Data Table
+
+The variables "IYR" and "EYR", from the original data set, stand respectively for "Imports Yearly" and "Exports Yearly" -- the annual totals. To make the graphs, one version of "Imports Yearly" had to be set to negative numbers: "Imports".  The other variables added to the original data set include "Trade_Balance", "Trade_Total", and "Exports".
+
+<br />
+
+```{r}
+russia_china_import_export <- rename(russia_china_import_export, "Year" = "year")
+
+russia_china_import_export %>%
+  mutate(across(where(is.numeric), round, 2)) %>%
+  select(-CTY_CODE) %>%
+  DT::datatable()
+
+```
+
+<hr />
