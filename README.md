@@ -1,4 +1,6 @@
 # Mearsheimer_NATO
+
+
 John J. Mearsheimer (2014) argued that "taproot of the trouble is NATO enlargement, the central element of a larger strategy to move Ukraine out of Russia’s orbit and integrate it into the West." These maps explore he means by NATO enlargement.
 
 A version with the maps and commentary is available at RPubs: [Mearsheimer_NATO](https://rpubs.com/Thom_JH/Mearsheimer_NATO). Prepared earlier for the substack: [American Exile](https://americanexile.substack.com/).
@@ -15,7 +17,18 @@ A version with the maps and commentary is available at RPubs: [Mearsheimer_NATO]
 
 <hr />
 
-The following applies to the R script, related data, and maps (also [available here](https://github.com/Thom-J-H/Mearsheimer_NATO/tree/main/map_images)).  NOT to the text content which is copyright &copy; 2022 for the substack: [American Exile](https://americanexile.substack.com/).
+<p>Added 30 April 2022: <br />
+These graphs and charts explore the USA trade balances with China and Russia. The data source is Census.gov › Business & Industry › Foreign Trade › [U.S. International Trade Data](https://www.census.gov/foreign-trade/data/index.html).</p>
+  
+<p>Commentary on these graphs and data at the substack [American Exile](https://americanexile.substack.com/p/russia-a-convenient-enemy-china-not).</p>
+  
+<p>These graphs also released under CC0 (Public Domain).</p>
+ 
+
+ 
+
+<hr />
+The following applies to the R script, related data, graphs, and maps (also [available here](https://github.com/Thom-J-H/Mearsheimer_NATO/tree/main/map_images)).  NOT to the text content which is copyright &copy; 2022 for the substack: [American Exile](https://americanexile.substack.com/).
 
 
 <p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
