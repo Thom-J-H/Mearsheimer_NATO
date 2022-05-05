@@ -35,7 +35,8 @@ Commentary on these graphs and data at the substack [American Exile](https://ame
 ![russia_IM](https://user-images.githubusercontent.com/12042357/166107049-24a8abc6-9c2d-480a-a96e-e7960b795f85.png)
 
 <hr />
-The following applies to the R script, related data, graphs, and maps (also [available here](https://github.com/Thom-J-H/Mearsheimer_NATO/tree/main/map_images)).  NOT to the text content which is copyright &copy; 2022 for the substack: [American Exile](https://americanexile.substack.com/).
+
+The following applies to the R script, related data, graphs, and maps (also [available here](https://github.com/Thom-J-H/Mearsheimer_NATO/tree/main/map_images) ).  NOT to the text content which is copyright &copy; 2022 for the substack: [American Exile](https://americanexile.substack.com/).
 
 
 <p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
