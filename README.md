@@ -19,6 +19,8 @@ A version with the maps and commentary is available at RPubs: [Mearsheimer_NATO]
 
 Added 30 April 2022: <br />
 These graphs and charts explore the USA trade balances with China and Russia. The data source is Census.gov › Business & Industry › Foreign Trade › [U.S. International Trade Data](https://www.census.gov/foreign-trade/data/index.html).
+
+A report version available at RPubs:[USA Trade Balances with China & Russia](https://rpubs.com/Thom_JH/trade_USA_China_Russia).
   
 Commentary on these graphs and data at the substack [American Exile](https://americanexile.substack.com/p/russia-a-convenient-enemy-china-not).
   
